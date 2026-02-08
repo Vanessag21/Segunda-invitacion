@@ -126,7 +126,8 @@ header{
     border: #02499C solid 1px;
 }
 input::placeholder{
-    color: red;
+    color: #02499C;
+    opacity: 50%;
 }
 @keyframes fadeIn {
   from { opacity: 0; }

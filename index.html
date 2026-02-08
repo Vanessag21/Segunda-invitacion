@@ -26,8 +26,8 @@
                     </div>
                 </div>
                 <div class="absolute bottom-0 w-full lg:w-5/6">
-                    <!-- Necesito que para mobile tengas un tamaño de letra más pequeño este es muy grande. Tal vez con 2xl basta. Lo mismo en todos los lugares que utilices solo text-5xl -->
-                    <span class="text-5xl">40 : 20 : 19 : 00</span>
+                    
+                    <span class="text-4xl sm:text-5xl">40 : 20 : 19 : 00</span>
                 </div>
             </div>
         </div>
@@ -40,10 +40,8 @@
         <img id="ThirdFlower" class="absolute -top-5 w-32 h-32 lg:w-48 lg:h-48 -left-10 opacity-0" src="/img/flor2.webp" alt="">
         <img id="FourthFlower" class="absolute -bottom-1 w-32 h-32 lg:w-48 lg:h-48 -left-10 opacity-0" src="/img/flor1.webp" alt="">
         <div class="absolute flex flex-col items-center top-1/2 -translate-y-1/2 w-3/4 -translate-x-1/2 left-1/2 ">
-            <!-- Por ejemplo, aqui también -->
-            <span class="text-5xl">Carlos Gonzalez y Rebeca Rubio</span>
-            <!-- Cambia este botón por un <a> con un href que lleve a la forma de confirmación -->
-            <button class="mt-10 border border-white">Confirmar</button>
+            <span class="text-4xl sm:text-5xl">Carlos Gonzalez y Rebeca Rubio</span>
+            <a class="mt-10 border border-white py-2 px-8 text-white tracking-wider rounded-sm" href="#confirmationContainer">Confirmar</a>
         </div>
     </div>
     <div class="flex flex-col items-center pb-12 pt-20 px-5 justify-evenly relative">
@@ -53,8 +51,7 @@
                 <h2 class="blue_letters">Itinerario de</h2>
                 <span class="coursive_big blue_letters">Boda</span>
             </div>
-            <!-- Pidele a ChatGPT una oración que suene más natural. Esto me sonaba bien en inglés pero suena medio raro en español-->
-            <p class="my-10 md:mb-4 md:w-1/2 md:text-left">Marquen sus calendarios y preparen sus zapatos de baile — tenemos una agenda de eventos inolvidable preparada. Ya sea que vengan por los votos o por los snacks de medianoche, hay algo especial esperándolos en cada momento.</p>
+            <p class="my-10 md:mb-4 md:w-1/2 md:text-left">Aparten la fecha y prepárense para celebrar con nosotros. Hemos planeado una agenda llena de momentos especiales, desde los votos hasta los snacks de medianoche.</p>
         </div>
         <div class="md:mt-16 flex flex-col md:flex-row md:justify-evenly md:w-full">
             <div class="relative bg-white  px-8 md:mr-5">
@@ -62,11 +59,9 @@
                 <div class="mt-28 mb-14 ">
                     <h3 class="mb-5">Ceremonia</h3>
                     <h5 class="font-bold">Fecha y hora</h5>
-                    <!-- Esta parte está en inglés. -->
-                    <p>10/12/2026 at 19:30</p>
+                    <p>10/12/2026 a las 19:30</p>
                     <div class="my-5">
-                        <!-- Cuida los acentos chapis. Es "Ubicación" -->
-                        <h5 class="font-bold">Ubicacion</h5>
+                        <h5 class="font-bold">Ubicación</h5>
                         <p >Av. Tecnológico 1703, Santo Niño, 31200 Chihuahua, Chih.</p>
                     </div>
                     <div class="flex w-full justify-center gap-x-5">
@@ -77,8 +72,7 @@
             <div class="relative bg-white  px-8 mt-10 md:m-0">
                 <img class="absolute left-0" src="/img/adorno.webp" alt="">
                 <div class="mt-28 mb-14 lg:mt-32">
-                    <!-- Cuida los acentos chapis. Es "Recepción" -->
-                    <h3 class="mb-5">Recepcion</h3>
+                    <h3 class="mb-5">Recepción</h3>
                     <h5 class="font-bold">Fecha y hora</h5>
                     <p>10/12/2026 at 19:30</p>
                     <div class="my-5">
@@ -139,34 +133,25 @@
                     </div>
                 </div>
             </div>
-            <!-- Eliminar este segundo "Carlos y Rebeca" -->
-            <div class="px-5">
-                <h3 class="mb-5">Carlos Gonzalez & Rebeca Rubio</h3>
-                <h5>12.05.2026</h5>
-            </div>
         </div>
         <img class="absolute -bottom-8 z-10 w-full h-16" src="/img/paperCut.webp" alt="">
     </div>
-    <!-- Si el viewport es muy pequeño h-screen termina causando varios bugs. En este caso lo mejor es no usar esa clase -->
-    <div class="relative h-screen flex items-center justify-center">
-       <img class="background_img absolute top-0 " src="/img/bgRegalos.webp" alt="">
-       <!-- Intenta que todo este contenido quede centrado verticalmente-->
-        <div class="w-11/12 h-3/5 md:h-1/2 lg:h-3/5 relative"> <!-- No es necesario el w-11/12. Puedes lograr el mismo efecto usando margenes. Usar ese tipo de fracciones como 11/12 o 3/5 generalmente no es bien visto. Intenta usar menos fracciones -->
-            <img class="absolute object-cover h-full z-10 top-0 w-full md:-translate-x-1/2 md:left-1/2 md:w-1/2" src="/img/giftCard.webp" alt="">
+    <div class="relative h-200 flex items-center justify-center">
+       <img class="background_img absolute top-0 -z-20 " src="/img/bgRegalos.webp" alt="">
+        <div class="mx-3 flex flex-col w-full h-150 relative"> 
+            <img class="object-cover h-full w-full md:translate-x-1/2 md:left-1/2 md:w-1/2" src="/img/giftCard.webp" alt="">
             <img class="absolute h-24 z-10 -top-12 left-1/2 -translate-x-1/2 w-24" src="/img/waxSeal.webp" alt="">
-            <div class="absolute z-10 top-20 md:top-16 lg:top-20 left-1/2 -translate-x-1/2 w-3/4">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full px-10 md:w-1/2">
                 <h2 class="blue_letters">Mesa de</h2>
                 <span class="coursive_big blue_letters">Regalos</span>
-            </div>
-            <div class="absolute z-10 top-72 md:top-44 lg:top-64 left-1/2 -translate-x-1/2 w-3/4 md:w-2/5 md:mt-14">
-                <p class="mb-4">Su cariño y compañía son el regalo más especial que podemos recibir.</p>
+                <p class="mb-4 mt-8">Su cariño y compañía son el regalo más especial que podemos recibir.</p>
                 <p>Si desean brindarnos un detalle adicional, hemos preparado una mesa de regalos con mucho amor para acompañarnos en este nuevo comienzo.</p>
                 <button class="rounded_blue_cta mt-8">Ver</button>
             </div>
         </div>
        
         <img class="absolute -bottom-8 z-10 w-full h-16" src="/img/paperCut.webp" alt="">
-       <img class="absolute top-0 background_img" src="/img/flowerPetals.webp" alt="">
+       <img class="absolute top-0 background_img -z-10" src="/img/flowerPetals.webp" alt="">
     </div>
     <div class="lg:flex lg:h-screen lg:pt-10 pb-5">
         <div class="p-3 w-full lg:w-1/2"> 
@@ -203,19 +188,15 @@
             </div>
         </div>
     </div>
-    <!-- No uses clases tan especificas como md:h-[70vh] a menos de que sea necesario o que tengas una muy buena razón. -->
-    <!-- Este tipo de clases solo agregan complejidad innecesaria. No es necesario que lo cambies ahorita pero si para que lo tengas en cuenta -->
-    <footer class="flex  flex-col justify-center h-screen relative md:h-[70vh]">
-        <!-- En mobile agregar un margen debajo de la imagen para que no haya overlap-->
-        <img class="w-3/4 md:w-1/3 absolute top-0 right-0" src="/img/footerFlowers.webp" alt="">
-        <div id="confirmationContainer" class="px-12 gap-y-5 flex flex-col items-center w-full text-center md:text-left md:items-start md:my-24">
+    <footer class="flex flex-col justify-center items-end md:items-start md:flex-row-reverse relative">
+        <img class="w-70 mb-5 h-50 h:70 lg:h-80 lg:w-120 xl:w-150" src="/img/footerFlowers.webp" alt="">
+        <div id="confirmationContainer" class="px-10 gap-y-5 h-115 flex flex-col items-center w-full text-center md:text-left md:items-start md:my-24 md:pr-0">
             <span class="coursive_big blue_letters">Confirmacion</span>
-            <p class="pb-5 md:w-3/4 lg:w-1/2">Les pedimos amablemente que nos confirmen si podrán acompañarnos en nuestro día especial. Agradecemos recibir su confirmacion para poder planear todo con cariño.</p>
+            <p class="pb-5 md:w-3/4">Les pedimos amablemente que nos confirmen si podrán acompañarnos en nuestro día especial. Agradecemos recibir su confirmacion para poder planear todo con cariño.</p>
             <div class="flex flex-col flex-wrap gap-y-4 w-full items-center md:w-1/2 md:items-start">
-                <!-- Para los placeholders usar un color que no sea rojo, intenta bajar la opacidad del azul un poquito -->
-                <input id="invNombre" class="border rounded-sm w-72  border-[#02499C] text-[#02499C] pt-3 pb-2 px-4 uppercase" placeholder="NOMBRE">
-                <input id="invApellido"  aria-label="Apellido" name="apellido" class="border rounded-sm w-72 text-[#02499C]  border-solid border-[#02499C] pt-3 pb-2 px-4 uppercase" placeholder="APELLIDO">
-                <select id="invCantidad"  aria-label="Numero de invitados" class="text-[#02499C] uppercase w-72 rounded-sm border border-solid border-[#02499C] pt-4 pb-3 px-4">
+                <input id="invNombre" class="border rounded-sm w-72  border-[#02499C] text-[#02499C]/90 pt-3 pb-2 px-4 uppercase" placeholder="NOMBRE">
+                <input id="invApellido"  aria-label="Apellido" name="apellido" class="border rounded-sm w-72 text-[#02499C]/90  border-solid border-[#02499C] pt-3 pb-2 px-4 uppercase" placeholder="APELLIDO">
+                <select id="invCantidad"  aria-label="Numero de invitados" class="text-[#02499C]/90 uppercase w-72 rounded-sm border border-solid border-[#02499C] pt-4 pb-3 px-4">
                     <option value="">Numero de invitados</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -228,10 +209,12 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
                 </select>
-                <button onclick="sendConfirmation()" class="rounded_blue_cta">Confirmar</button>
+                <button onclick="sendConfirmation()" class="rounded_blue_cta mb-20 hover:bg-[#f2e8dd]">Confirmar</button>
             </div>
         </div>
-        <h3 id="ConfirmationText" class="text-center md:text-left md:pl-10 hidden">Gracias por confirmar</h3>
+        <div id="ConfirmationTextContainer" class="px-5 w-full h-120 hidden items-center justify-center md:justify-start md:my-24">
+            <h3 id="ConfirmationText" class="text-center md:text-left">Gracias por confirmar</h3>
+        </div>
     </footer>
 </body>
 </html>

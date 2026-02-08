@@ -57,8 +57,13 @@ observerRotate.observe(rotateInFourth);
 function sendConfirmation(){
   const inputElements = document.getElementById("confirmationContainer")
   const confirmationText = document.getElementById("ConfirmationText")
+  const confirmationTextContainer = document.getElementById("ConfirmationTextContainer")
 
   inputElements.classList.add("hidden")
+  confirmationTextContainer.classList.remove("hidden")
   confirmationText.classList.remove("hidden")
+
+  confirmationTextContainer.classList.add("flex")
+  confirmationText.classList.add("flex")
   confirmationText.classList.add("fade-in-element")
 }
